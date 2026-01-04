@@ -1,0 +1,83 @@
+/* Global */
+body {
+  margin: 0;
+  background-color: #f5f6fa;
+  font-family: Arial, sans-serif;
+}
+
+h2, h3, h4 {
+  margin: 8px 0;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.filters button {
+  cursor: pointer;
+}
+
+/* Product Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+/* Product Card */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.card button {
+  padding: 6px 12px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.card button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Cart */
+.cart {
+  margin-top: 30px;
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.cart input {
+  width: 50px;
+  padding: 4px;
+}
